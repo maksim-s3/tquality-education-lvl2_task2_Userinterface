@@ -1,17 +1,17 @@
-package aquality.selenium.template.forms.pages;
+package forms.pages;
 
 import aquality.selenium.elements.interfaces.ILink;
 import aquality.selenium.forms.Form;
 import org.openqa.selenium.By;
 
 public class MainPage extends Form {
-    private final ILink startLink = getElementFactory().getLink(By.xpath("//*[contains(@class, 'start__link')]"), "Link click HERE to GO");
+    private final ILink startLink = getElementFactory().getLink(By.xpath("//*[contains(@class, 'start__link')]"), "Click HERE to GO");
 
     public MainPage() {
         super(By.xpath("//*[contains(@class, 'start__paragraph')]"), "Main page");
     }
 
-    public void clickStartLink(){
+    public void clickStartLink() {
         startLink.click();
     }
 }

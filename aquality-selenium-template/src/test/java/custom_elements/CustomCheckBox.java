@@ -1,8 +1,7 @@
-package aquality.selenium.template.custom_elements;
+package custom_elements;
 
 import aquality.selenium.core.elements.ElementState;
 import aquality.selenium.elements.CheckBox;
-import aquality.selenium.elements.interfaces.IElement;
 import org.openqa.selenium.By;
 
 public class CustomCheckBox extends CheckBox {

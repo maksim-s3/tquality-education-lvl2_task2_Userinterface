@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Userinterface Test Suite" verbose="1">
-    <test name="Use cases tests">
-        <classes>
-            <class name="tests.usecases.TestCase1"/>
-        </classes>
-    </test>
-</suite>
