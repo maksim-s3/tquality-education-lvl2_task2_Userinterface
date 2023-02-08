@@ -27,7 +27,6 @@ public abstract class BaseTest {
 
     @AfterMethod
     public void afterTest() {
-        getBrowser().getScreenshot();
         if (AqualityServices.isBrowserStarted()) {
             getBrowser().quit();
         }

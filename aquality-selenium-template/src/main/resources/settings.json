@@ -103,7 +103,7 @@
     "timeoutCommand": 120
   },
   "retry": {
-    "number": 5,
+    "number": 2,
     "pollingInterval": 300
   },
   "logger": {
