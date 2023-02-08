@@ -146,7 +146,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.12.0</version>
                 <configuration>
-                    <reportDirectory>${basedir}/target/allure-report</reportDirectory>
+                    <reportDirectory>${basedir}aquality-selenium-template/target/allure-results</reportDirectory>
                 </configuration>
             </plugin>
         </plugins>
