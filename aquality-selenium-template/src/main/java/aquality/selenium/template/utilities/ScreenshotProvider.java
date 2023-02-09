@@ -14,7 +14,7 @@ public class ScreenshotProvider implements IScreenshotProvider {
     @SuppressWarnings("UnusedReturnValue")
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = ".png")
     public byte[] takeScreenshot() {
-        int scrollTimeout = 500;
+        int scrollTimeout = 100;
         ShootingStrategy shootingStrategy = ShootingStrategies.viewportPasting(scrollTimeout);
         Screenshot fpScreenshot = new AShot()
                 .shootingStrategy(shootingStrategy)

@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Userinterface Test Suite" verbose="1">
-    <test name="Use cases tests">
+    <test name="Filling forms">
+        <parameter name="numberInterests" value="3"></parameter>
         <classes>
-            <class name="tests.usecases.TestCase1"/>
-            <class name="tests.usecases.TestCase2"/>
-            <class name="tests.usecases.TestCase3"/>
-            <class name="tests.usecases.TestCase4"/>
+            <class name="tests.usecases.FillingRegistrationFormsTest"/>
+        </classes>
+    </test>
+    <test name="Hide help form">
+        <classes>
+            <class name="tests.usecases.HideHelpFormTest"/>
+        </classes>
+    </test>
+    <test name="Access cookies">
+        <classes>
+            <class name="tests.usecases.AccessCookiesTest"/>
+        </classes>
+    </test>
+    <test name="Timer starts at zero">
+        <classes>
+            <class name="tests.usecases.TimerAtZeroTest"/>
         </classes>
     </test>
 </suite>

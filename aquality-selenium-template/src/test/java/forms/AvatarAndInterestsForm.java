@@ -11,7 +11,7 @@ import org.openqa.selenium.By;
 import java.util.List;
 
 public class AvatarAndInterestsForm extends Form {
-    private static final String FILE_AVATAR_NAME = "avatar.png";
+    private static final String NAME_FILE_AVATAR = "avatar.png";
     private ILabel pageIndicator = getElementFactory().getLabel(By.xpath("//*[contains(@class, 'page-indicator')]"), "Page indicator");
     private IButton uploadButton = getElementFactory().getButton(By.xpath("//a[contains(@class, 'upload-button')]"), "Upload");
     private IButton nextButton = getElementFactory().getButton(By.xpath("//*[contains(text(), 'Next')]"), "Next");
@@ -42,7 +42,7 @@ public class AvatarAndInterestsForm extends Form {
 
     public void uploadImage() {
         uploadButton.click();
-        String filePath = FileHelper.getResourceFileByName(FILE_AVATAR_NAME).getAbsolutePath();
+        String filePath = FileHelper.getResourceFileByName(NAME_FILE_AVATAR).getAbsolutePath();
         RobotUtil.sendTextInModalWindow(filePath);
     }
 
