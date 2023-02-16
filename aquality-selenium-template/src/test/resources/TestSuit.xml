@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Userinterface Test Suite" verbose="1">
+    <parameter name="authorName" value="Maksim Startsev"></parameter>
+    <parameter name="authorLogin" value="m.startsev"></parameter>
+    <parameter name="authorEmail" value="maksim-s3@mail.ru"></parameter>
+    <test name="Filling forms registration">
+        <parameter name="numberInterests" value="3"></parameter>
+        <classes>
+            <class name="tests.usecases.FillingRegistrationFormsTest"/>
+        </classes>
+    </test>
+    <test name="Hide help form">
+        <classes>
+            <class name="tests.usecases.HideHelpFormTest"/>
+        </classes>
+    </test>
+    <test name="Access cookies">
+        <classes>
+            <class name="tests.usecases.AccessCookiesTest"/>
+        </classes>
+    </test>
+    <test name="Timer starts at zero">
+        <classes>
+            <class name="tests.usecases.TimerAtZeroTest"/>
+        </classes>
+    </test>
+    <test name="Simulate running copied test. Update the information in data base">
+        <parameter name="maxNumberTestsToRun" value="10"></parameter>
+        <classes>
+            <class name="tests.usecases.TestDataProcessing"/>
+        </classes>
+    </test>
+</suite>

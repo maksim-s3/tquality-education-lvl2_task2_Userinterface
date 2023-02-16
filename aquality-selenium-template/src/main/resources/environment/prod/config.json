@@ -1,4 +1,6 @@
 {
   "startUrl": "https://userinyerface.com/",
-  "apiUrl": "https://userinyerface.com/"
+  "apiUrl": "https://userinyerface.com/",
+  "project_name": "Userinterface",
+  "build_number" : 5
 }
