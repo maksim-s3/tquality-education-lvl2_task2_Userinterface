@@ -14,6 +14,6 @@ public class AllureHelper {
     @SuppressWarnings("UnusedReturnValue")
     @Attachment(value = "Log", type = "text/html", fileExtension = ".log")
     public static byte[] takeLog() {
-        return FileHelper.getLog();
+        return FileHelper.getLogAsBytes();
     }
 }
